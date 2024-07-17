@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg-dark-color : #0D0D0D;
+  --text-dark-primary-color: #FFFFFF;
+  --text-dark-gray-color: #808080;
+  --text-dark-light-gray-color: #C5C5C5;
+  --bg-light-color: #F0F0F0;
+  --bg-light-primary-color: #0D0D0D;
+}
+*{
+  font-family: "Inter", sans-serif;
+}
+.navitems > li{
+  @apply cursor-pointer;
+}
+.navitems > li:hover{
+  @apply scale-105;
+}
