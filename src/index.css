@@ -13,7 +13,8 @@
   --skills-card-dark-bg-color: #1f1f1fd0;
   --skills-card-light-text-color: #000000;
   --skills-card-light-bg-color: #EBEBEB;
-
+  --hover-dark-color: #FFFFFF15;
+  --dark-hammenu: #000000ef;
 }
 *{
   font-family: "Inter", sans-serif;
@@ -21,7 +22,7 @@
 .navitems > li{
   @apply cursor-pointer;
 }
-.navitems > li:hover{
-  @apply scale-105;
-}
 
+.gradient{
+  background: linear-gradient(to right, #ddd6fe, #fbcfe8); /* Inline gradient definition */
+}

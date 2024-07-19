@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      gradientColorStops: theme => ({
+        'purple-500': '#a855f7',
+        'indigo-500': '#6366f1',
+      }),
+    },
     colors: {
       dark: {
         bgcolor: "var(--bg-dark-color)",
@@ -11,6 +16,8 @@ export default {
         graylighttextcolor: "var(--text-dark-light-gray-color)",
         skillscardbg: "var(--skills-card-dark-bg-color)",
         skillscardtext: "var(--skills-card-dark-text-color)",
+        hovercolor: "var(--hover-dark-color)",
+        hammenu:"var(--dark-hammenu)"
       },
       light: {
         bgcolor: "var(--bg-light-color)",

@@ -1,39 +1,39 @@
-import React from 'react'
-import taskbuddy from "../assets/taskbuddy.svg"
+import React from "react";
 
-/*
-
-https://www.figma.com/design/fORntmSN5YNf7Y5Sknib00/Geist---UI-Kit-for-Figma-(Community)?node-id=1354-7501&t=CO84Ac0kl7muRh5p-0
-
-https://www.figma.com/design/i6ofHnybNFxlbeE22kfFrT/Designer%2FDeveloper-Portfolio-(Community)?node-id=0-1&t=bp4R0AQtrroxDjGX-0
-
-https://www.figma.com/design/p13z2jj3AjFdAKLLScPzwm/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop-(Community)?node-id=328-4105&t=JSPjd5NcHXfJKBie-0
-
-https://www.figma.com/design/Dg3n08QbdxIJpzaHRXDMdh/Software-developer-portfolio-(Community)?node-id=0-1&t=Fj2SGkScXTthCjcd-0
-
-*/
-
-const Project = () => {
+const Project = ({data, order}) => {
+  const {logo, title, desc, github_url, live_url, image} = data;
   return (
-    <div className='project w-full flex'>
-      <div className='leftside w-1/2'>
-        <div className='topside'>
-            <div>Logo</div>
-            <div>title</div>
-            <div>desc</div>
+    <div className={`project w-full flex ${order ? "flex-row-reverse" : ""} dark:bg-dark-skillscardbg bg-light-skillscardbg shadow-inner p-8 rounded-2xl`}>
+      <div className="leftside w-full sm:w-1/2 flex flex-col gap-12">
+        <div className="topside flex flex-col gap-2">
+          <div className="w-20 h-20">
+            <img
+              src={logo}
+              alt="logo"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="text-3xl font-semibold">{title}</div>
+          <div className="font-normal text-dark-graytextcolor">
+            {desc}
+          </div>
         </div>
-        <div className='bottomside'>
-            <a href="http://">Github</a>
-            <a href="http://">Visit Site</a>
+        <div className="bottomside flex gap-4 items-center">
+          <a href={github_url} target="_blank" className="flex items-center gap-3 px-3 py-1 border-[.5px] border-[#808080] rounded-2xl text-dark-graytextcolor hover:scale-105">
+            <span>Github</span>
+            <span><i className="bi bi-arrow-right"></i></span>
+          </a>
+          <a href={live_url} target="_blank" className="flex items-center gap-3  px-3 py-1 border-[.5px] border-[#808080] rounded-2xl text-dark-graytextcolor hover:scale-105">
+            <span>Live</span>
+            <span><i className="bi bi-arrow-right"></i></span>
+          </a>
         </div>
       </div>
-      <div className='rightside w-1/2'>
-        <img src={taskbuddy} alt='logo' 
-            className='w-[90%] object-cover'
-        />
+      <div className={`rightside sm:w-1/2 hidden sm:flex ${order? "justify-start": "justify-end"}`}>
+        <img src={image} alt="logo" className="w-[90%]" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
