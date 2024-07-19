@@ -9,6 +9,11 @@
   --text-dark-light-gray-color: #C5C5C5;
   --bg-light-color: #F0F0F0;
   --bg-light-primary-color: #0D0D0D;
+  --skills-card-dark-text-color: #FFFFFF;
+  --skills-card-dark-bg-color: #1f1f1fd0;
+  --skills-card-light-text-color: #000000;
+  --skills-card-light-bg-color: #EBEBEB;
+
 }
 *{
   font-family: "Inter", sans-serif;
@@ -19,3 +24,4 @@
 .navitems > li:hover{
   @apply scale-105;
 }
+

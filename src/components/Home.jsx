@@ -10,11 +10,9 @@ const Home = () => {
     
     const changeTheme = () => {
         const newTheme = theme === "dark" ? "light" : "dark";
-        console.log(newTheme)
         setTheme(newTheme);
     };
     useEffect(()=>{
-        console.log("-----")
         if(theme === "dark"){
             document.body.classList.add("dark");
             setThemeLocalStorage("dark")
@@ -26,12 +24,13 @@ const Home = () => {
 
 
     return (
-        <div className="h-screen w-full dark:bg-dark-bgcolor dark:text-dark-textcolor bg-light-bgcolor text-light-textcolor py-4 relative backdrop-blur-lg">
+        <div className="w-full py-4 px-4 relative backdrop-blur-lg">
             <Gradient />
-            <div className="w-4/5 mx-auto">
+            <div className="sm:w-4/5 w-full mx-auto">
                 <Header changeTheme={changeTheme} theme={theme} />
                 <Outlet />
             </div>
+            <div id="cursor" className="w-6 h-6 rounded-full bg-white fixed"></div>
         </div>
     );
 };

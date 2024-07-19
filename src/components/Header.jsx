@@ -7,14 +7,14 @@ const Header = ({changeTheme, theme}) => {
       <Link to="/" className='logo text-2xl leading-none tracking-tighter'>
        {"<S />"}
       </Link>
-      <div className='menu flex gap-8'>
+      <div className='menu hidden sm:flex gap-8'>
         <Link to="/" className='hover:scale-110 cursor-pointer'>Home</Link>
         <Link to="/resume" className='hover:scale-110 cursor-pointer'>Resume</Link>
         <Link to="/projects" className='hover:scale-110 cursor-pointer'>Projects</Link>
         <Link to="/about" className='hover:scale-110 cursor-pointer'>About</Link>
         <Link to="/contact" className='hover:scale-110 cursor-pointer'>Contact</Link>
       </div>
-      <ul className='navitems flex gap-5'>
+      <ul className='navitems sm:flex hidden gap-5'>
         <li>
             <a href='/'><i className="bi bi-linkedin text-lg"></i></a>
         </li>
