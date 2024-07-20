@@ -26,3 +26,28 @@
 .gradient{
   background: linear-gradient(to right, #ddd6fe, #fbcfe8); /* Inline gradient definition */
 }
+
+.hover-items{
+  @apply px-2 py-1 rounded-md hover:bg-dark-hovercolor;
+}
+
+.fields{
+  @apply flex flex-col gap-2;
+}
+
+.inpfield-inp{
+  @apply bg-[transparent] px-2 focus:outline-none w-3/5 ;
+}
+
+
+.inpfield-inp:-webkit-autofill,
+.inpfield-inp:-webkit-autofill:hover, 
+.inpfield-inp:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #808080;
+  -webkit-box-shadow: 0 0 0px 1000px #00000000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

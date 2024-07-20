@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="w-full py-4 px-4 relative backdrop-blur-lg">
+      <div className="w-full py-4 px-4 relative backdrop-blur-lg ">
         <Gradient />
         <div className="sm:w-4/5 w-full mx-auto">
           <Header changeTheme={changeTheme} theme={theme} />

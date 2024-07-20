@@ -4,6 +4,7 @@ import MainComponent from "./components/MainComponent"
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Resume from "./components/Resume"
+import Projects from "./components/Projects"
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/resume" element={<Resume />}></Route>
-          {/* <Route path="/projects" element={<Projects />}></Route> */}
+          <Route path="/projects" element={<Projects />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

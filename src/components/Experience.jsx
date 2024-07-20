@@ -16,7 +16,6 @@ I currently work as a Full Stack Developer specializing in the MERN stack within
          I have been deeply involved in both frontend and backend development, focusing on creating responsive and dynamic user interfaces using React.js to ensure a seamless and engaging user experience. I have collaborated closely with backend teams to integrate RESTful APIs, enhancing the overall functionality and performance of our web applications.
     `,
   },
-  // Add more experiences as needed
 ];
 
 const Experience = () => {

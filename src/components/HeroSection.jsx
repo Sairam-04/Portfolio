@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const HeroSection = () => {
     return (
         <div className="flex sm:h-[90vh] h-[120vw] items-center">
@@ -11,8 +13,8 @@ const HeroSection = () => {
                     I bridge the gap between design and functionality, crafting performant and scalable web applications. My passion lies in tackling real-world problems with innovative solutions.
                 </div>
                 <div className="flex gap-6 sm:pt-4 pt-2">
-                    <button className="text-dark-textcolor sm:text-lg text-[13px] px-5 sm:py-3 py-1.5 font-medium drop-shadow-2xl shadow-[inset_-12px_-8px_40px_#46464620] bg-gradient-to-b from-[#212121] to-[#131313] rounded-lg">See my Resume</button>
-                    <button className="px-5 sm:py-3 py-1.5 sm:text-lg text-[13px] font-medium drop-shadow-2xl shadow-[inset_-12px_-8px_40px_#46464620] dark:bg-gradient-to-b from-[#212121] to-[#131313] rounded-lg">Get in Touch</button>
+                    <Link to="/resume" className="text-dark-textcolor sm:text-lg text-[13px] px-5 sm:py-3 py-1.5 font-medium drop-shadow-2xl shadow-[inset_-12px_-8px_40px_#46464620] bg-gradient-to-b from-[#212121] to-[#131313] rounded-lg">See my Resume</Link>
+                    <Link to="/contact" className="px-5 sm:py-3 py-1.5 sm:text-lg text-[13px] font-medium drop-shadow-2xl shadow-[inset_-12px_-8px_40px_#46464620] dark:bg-gradient-to-b from-[#212121] to-[#131313] rounded-lg">Get in Touch</Link>
                 </div>
             </div>
 

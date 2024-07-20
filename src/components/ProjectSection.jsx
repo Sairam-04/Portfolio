@@ -13,11 +13,11 @@ const ProjectSection = () => {
           return <Project data={ele} order={index % 2 !== 0} key={ele.title} />;
         })}
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <button className="text-dark-textcolor sm:text-lg text-[13px] px-5 sm:py-3 py-1.5 font-medium drop-shadow-2xl shadow-[inset_-12px_-8px_40px_#46464620] bg-gradient-to-b from-[#212121] to-[#131313] hover:scale-105 rounded-lg">
           View More Projects
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -13,19 +13,19 @@ const Header = ({ changeTheme, theme }) => {
           {"<S />"}
         </Link>
         <div className="menu hidden sm:flex gap-8">
-          <Link to="/" className="hover:scale-110 cursor-pointer">
+          <Link to="/" className="hover-items hover:scale-110 cursor-pointer ">
             Home
           </Link>
-          <Link to="/resume" className="hover:scale-110 cursor-pointer">
+          <Link to="/resume" className="hover-items hover:scale-110 cursor-pointer">
             Resume
           </Link>
-          <Link to="/projects" className="hover:scale-110 cursor-pointer">
+          <Link to="/projects" className="hover-items hover:scale-110 cursor-pointer">
             Projects
           </Link>
-          <Link to="/about" className="hover:scale-110 cursor-pointer">
+          <Link to="/about" className="hover-items hover:scale-110 cursor-pointer">
             About
           </Link>
-          <Link to="/contact" className="hover:scale-110 cursor-pointer">
+          <Link to="/contact" className="hover-items hover:scale-110 cursor-pointer">
             Contact
           </Link>
         </div>
@@ -70,19 +70,19 @@ const Header = ({ changeTheme, theme }) => {
             <i className="bi bi-x-lg text-2xl"></i>
           </div>
           <div className="flex flex-col gap-3 px-2 pb-8 text-xl">
-            <Link to="/" className="hover:scale-110 cursor-pointer">
+            <Link to="/" onClick={()=>openHamMenu()} className="cursor-pointer">
               Home
             </Link>
-            <Link to="/resume" className="hover:scale-110 cursor-pointer">
+            <Link to="/resume" onClick={()=>openHamMenu()} className="cursor-pointer">
               Resume
             </Link>
-            <Link to="/projects" className="hover:scale-110 cursor-pointer">
+            <Link to="/projects" onClick={()=>openHamMenu()} className=" cursor-pointer">
               Projects
             </Link>
-            <Link to="/about" className="hover:scale-110 cursor-pointer">
+            <Link to="/about" onClick={()=>openHamMenu()} className=" cursor-pointer">
               About
             </Link>
-            <Link to="/contact" className="hover:scale-110 cursor-pointer">
+            <Link to="/contact" onClick={()=>openHamMenu()} className=" cursor-pointer">
               Contact
             </Link>
             <div onClick={()=>changeTheme()}>Change Theme</div>
