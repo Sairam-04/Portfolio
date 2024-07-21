@@ -4,6 +4,7 @@ import Header from "./Header";
 import { getTheme, setThemeLocalStorage } from "../utils/localStorage";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
+import { ToastContainer } from "react-toastify";
 
 const Home = () => {
   const initialTheme = getTheme();
@@ -36,6 +37,8 @@ const Home = () => {
         {/* <div id="cursor" className="w-6 h-6 rounded-full bg-white fixed"></div> */}
       </div>
       <Footer />
+      <ToastContainer />
+
     </>
   );
 };

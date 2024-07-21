@@ -1,0 +1,1 @@
+export const DB_URL = "https://portfolio-contact-83dfe-default-rtdb.firebaseio.com/UserData.json"
