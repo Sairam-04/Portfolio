@@ -15,9 +15,11 @@ import Git from "../assets/icon-git.svg";
 import taskbuddyLogo from "../assets/taskbuddylogo.svg";
 import connectverseLogo from "../assets/connectverselogo.svg";
 import taskbuddy from "../assets/taskbuddy.svg";
+import storevillaLogo from "../assets/storevilla-logo.svg"
 import connectverse from "../assets/connectverse.svg";
 import g3nLogo from "../assets/g3nlogo.png";
 import g3n from "../assets/g3nai.svg";
+import storevilla from "../assets/storevilla.svg";
 
 export const skillsJson = [
   {
@@ -83,6 +85,14 @@ export const skillsJson = [
 ];
 
 export const projectsJson = [
+  {
+    logo: storevillaLogo,
+    title: "StoreVilla",
+    desc: `StoreVilla is a streamlined e-commerce platform built using Next.js, React, and TailwindCSS. It offers dynamic product listings, efficient pagination, and user-friendly cart management, complete with discount calculations and localized currency formatting, ensuring a seamless and engaging shopping experience.`,
+    github_url: "https://github.com/Sairam-04/E-Commerce",
+    live_url: "https://storevilla.vercel.app/",
+    image: storevilla,
+  },
   {
     logo: connectverseLogo,
     title: "Connect Verse",
